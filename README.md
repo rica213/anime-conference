@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Unicorn con 2023] <a name="about-project"></a>
+# 🦄 [Unicorn con 2023] <a name="about-project"></a>
 
 You can check all the necessary information about **"unicorn con 2023"** in this website.
 

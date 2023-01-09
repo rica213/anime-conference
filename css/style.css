@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Cocogoose';
-  src: local('Cocogoose'), url('fonts/Cocogoose_trial.otf') format('opentype');
+  font-family: "Cocogoose";
+  src: local("Cocogoose"), url("fonts/Cocogoose_trial.otf") format("opentype");
 }
 
 :root {
-  --primary-color : #ec5242;
-  --secondary-color : #272a31;
-  --tertiary-color : #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
+  --tertiary-color: #d3d3d3;
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .logo {
@@ -29,8 +29,11 @@ body {
   margin-top: 10px;
 }
 
-/* navbar */
+header {
+  position: relative;
+}
 
+/* navbar */
 .navbar-toggler-icon {
   background-image: none;
 }
@@ -51,4 +54,39 @@ body {
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
   color: #ffffff;
+}
+
+/* headline */
+.headline {
+  background-color: var(--secondary-color);
+  background-image: url(../img/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  filter: blur(3px);
+}
+
+.headline-text {
+  font-family: 'Cocogoose', sans-serif;
+  background: rgb(236, 82, 66);
+  background: linear-gradient(
+    67deg,
+    rgba(236, 82, 66, 1) 0%,
+    rgba(255, 255, 255, 0.35057773109243695) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: contrast(1000%);
+}
+
+.headline-text h1 {
+  font-size: 3.125rem;
+}
+
+.headline-text p {
+  color: var(--secondary-color);
 }

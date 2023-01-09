@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Cocogoose';
+  src: local('Cocogoose'), url('fonts/Cocogoose_trial.otf') format('opentype');
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}

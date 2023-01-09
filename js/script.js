@@ -1,7 +1,18 @@
-window.matchMedia("(min-width: 768px)").addEventListener('change', () => {
-  document.querySelector('.nav-top').classList.remove('d-none');
-});
+const desktopSize = window.matchMedia('(min-width: 768px)');
+const body = document.querySelector('body');
 
-window.matchMedia("(max-width: 767px)").addEventListener('change', () => {
+body.onload = (e) => {
+  if (desktopSize.matches) {
+    document.querySelector('.nav-top').classList.remove('d-none');
+} else {
   document.querySelector('.nav-top').classList.add('d-none');
-});
+}
+}
+
+desktopSize.onchange = (e) => {
+    if (e.matches) {
+      document.querySelector('.nav-top').classList.remove('d-none');
+  } else {
+    document.querySelector('.nav-top').classList.add('d-none');
+  }
+}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cocogoose";
-  src: local("Cocogoose"), url("fonts/Cocogoose_trial.otf") format("opentype");
+  src: local("Cocogoose"), url("../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
 :root {
@@ -34,6 +34,10 @@ header {
 }
 
 /* navbar */
+.nav-top .nav-link{
+  color: var(--secondary-color);
+}
+
 .navbar-toggler-icon {
   background-image: none;
 }
@@ -69,7 +73,18 @@ header {
   filter: blur(3px);
 }
 
+@media screen and (min-width: 768px) {
+  .headline {
+    background-size: cover;
+  }
+}
+
 .headline-text {
+  margin-top: 5rem;
+}
+
+.headline-text q,
+.headline-text h1 {
   font-family: 'Cocogoose', sans-serif;
   background: rgb(236, 82, 66);
   background: linear-gradient(
@@ -84,9 +99,5 @@ header {
 }
 
 .headline-text h1 {
-  font-size: 3.125rem;
-}
-
-.headline-text p {
-  color: var(--secondary-color);
+  font-size: 3rem;
 }

@@ -3,6 +3,52 @@
   src: local('Cocogoose'), url('fonts/Cocogoose_trial.otf') format('opentype');
 }
 
+:root {
+  --primary-color : #ec5242;
+  --secondary-color : #272a31;
+  --tertiary-color : #d3d3d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
   font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* navbar */
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler-icon::before {
+  font-family: FontAwesome;
+  content: "\f0c9";
+  color: var(--tertiary-color);
+  font-size: 30px;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
 }

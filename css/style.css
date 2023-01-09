@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -118,18 +119,18 @@ header {
     rgba(255, 255, 255, 0) 50%,
     rgba(236, 82, 66, 1) 100%
   );
-  filter: blur(1px);
+  /* filter: blur(1px); */
 }
 
 .program-title {
   color: var(--primary-color);
 }
 
-#program .row {
+#program .col-sm-5 {
   transition: filter 0.5s;
   border-radius: 10px;
 }
 
-#program .row:hover {
+#program .col-sm-5:hover {
   filter: drop-shadow(16px 16px 10px black);
 }

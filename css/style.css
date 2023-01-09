@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Cocogoose";
-  src: local("Cocogoose"), url("../fonts/Cocogoose_trial.otf") format("opentype");
+  src: local("Cocogoose"),
+    url("../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
 :root {
@@ -31,10 +32,11 @@ body {
 
 header {
   position: relative;
+  z-index: -5;
 }
 
 /* navbar */
-.nav-top .nav-link{
+.nav-top .nav-link {
   color: var(--secondary-color);
 }
 
@@ -53,6 +55,7 @@ header {
 .navbar-custom .navbar-nav .nav-link {
   color: var(--tertiary-color);
   text-transform: uppercase;
+  cursor: pointer;
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
@@ -85,7 +88,7 @@ header {
 
 .headline-text q,
 .headline-text h1 {
-  font-family: 'Cocogoose', sans-serif;
+  font-family: "Cocogoose", sans-serif;
   background: rgb(236, 82, 66);
   background: linear-gradient(
     67deg,
@@ -100,4 +103,28 @@ header {
 
 .headline-text h1 {
   font-size: 3rem;
+}
+
+/* main program */
+#program {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(236, 82, 66, 1) 100%
+  );
+  filter: blur(1px);
+}
+
+.program-title {
+  color: var(--primary-color);
+}
+
+#program .row {
+  transition: filter 0.5s;
+  border-radius: 10px;
+}
+
+#program .row:hover {
+  filter: drop-shadow(16px 16px 10px black);
 }

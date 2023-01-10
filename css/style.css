@@ -113,17 +113,13 @@ header {
 
 /* main program */
 #program {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(236, 82, 66, 1) 100%
-  );
-  /* filter: blur(1px); */
+  background-image: url(../img/tL78cuP-cool-orange-backgrounds.png);
+  background-size: cover;
 }
 
 .program-title {
   color: var(--primary-color);
+  filter: contrast(1000%);
 }
 
 #program .col-sm-5 {
@@ -133,4 +129,10 @@ header {
 
 #program .col-sm-5:hover {
   filter: drop-shadow(16px 16px 10px black);
+}
+
+/* guests section */
+#guest {
+  background-color: var(--tertiary-color);
+
 }

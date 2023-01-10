@@ -184,3 +184,12 @@ header {
   display: inline-block;
   filter: contrast(150%);
 }
+
+/* partner section */
+#partner {
+  background-color: var(--secondary-color);
+}
+
+.brand * {
+  color: var(--primary-color);
+}

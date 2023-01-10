@@ -1,3 +1,4 @@
+const moreOrLess = document.querySelector('.more-or-less');
 const guests = [
   {
     id: '1',
@@ -50,10 +51,8 @@ const loadGuests = () => {
     li.classList.add('guest', 'col-md-5', 'mt-3');
     if(guest.id === '1' || guest.id ==='2'){
       li.classList.add('d-flex');
-      console.log('1 ou 2');
     } else {
       li.classList.add('d-none', 'd-md-flex');
-      console.log('les reste');
     }
     ul.appendChild(li);
     const headshotWrapper = document.createElement('div');
@@ -86,3 +85,15 @@ const loadGuests = () => {
 window.onload = (event) => {
   loadGuests();
 };
+
+
+const loadMore = () => {
+  const li = document.querySelectorAll('.guest');
+  guests.forEach((guest) => {
+    if(guest.id ==! '1' || guest.id ==!'2'){
+      li.classList.remove('d-none');
+    }
+  });
+}
+
+moreOrLess.addEventListener('click', loadMore);

@@ -193,3 +193,8 @@ header {
 .brand * {
   color: var(--primary-color);
 }
+
+/* footer */
+small {
+  font-size: 0.65rem;
+}

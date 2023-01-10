@@ -26,7 +26,7 @@
   </head>
   <body>
     <header id="home">
-      <nav class="nav justify-content-end nav-top bg-light d-none">
+      <nav class="nav justify-content-end nav-top bg-light d-none d-md-flex">
         <a class="nav-link" aria-current="page" href="#"
           ><i class="fa-brands fa-facebook"></i
         ></a>
@@ -49,7 +49,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
-            <a class="navbar-brand" href="#home"
+            <a class="navbar-brand" href="index.html"
               ><img
                 src="img/logo/kohai-logo-transparent-bg.png"
                 alt="logo"
@@ -89,49 +89,72 @@
       </div>
     </header>
     <main>
-      <section id="program">
-        <h2 class="text-center fw-bolder pt-5 pb-3 text-light">Main Program</h2>
-        <div class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center">
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-1 p-3 col-md-2">
+      <section id="program" class="d-flex flex-column align-items-center pb-3">
+        <h2 class="text-center fw-bolder pt-5 text-light">Main Program</h2>
+        <span class="line-primary"></span>
+        <div class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center m-3">
+            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
               <i class="fa-solid fa-masks-theater fs-1 p-1"></i>
               <h3 class="fw-semibold m-2 program-title fs-6">Perfomances</h3>
               <p class="p-1">
                 A lot of performers will join us at that time to blow our mind.
-                "Love Live!" girls band will open the show so don't be late!
               </p>
             </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-1 p-3 col-md-2">
+            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
               <i class="fa-solid fa-pen-to-square fs-1"></i>
               <h3 class="fw-semibold m-2 program-title fs-6">Autographs</h3>
               <p class="p-1">
-                At the main hall, all your favorite authors will gather to make
-                your dream a reality. So let's not make them wait!
+                All your favorite authors will gather to make
+                your dream a reality.
               </p>
             </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-1 p-3 col-md-2">
+            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
               <i class="fa-solid fa-handshake fs-1"></i>
               <h3 class="fw-semibold m-2 program-title fs-6">
                 Cosplayer meet&greet
               </h3>
               <p class="p-1">
-                An anime conference without cosplayers is just not worth to be
-                called that way. And this time, every big cosplayers from all over
+                Every big cosplayers from all over
                 the world will be there.
               </p>
             </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-1 p-3 col-md-2">
+            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
               <i class="fa-sharp fa-solid fa-star fs-1"></i>
               <h3 class="fw-semibold m-2 program-title fs-6">Special events</h3>
               <p class="p-1">
-                Let's just save the best for the last. There are several special
-                events during this expo. Not to mention the "gear fourth"
-                competition. You should claim your badge to discover them out.
-              </p>
+                The "gear fourth" show will be the wild card but more special events will also take place.
+             </p>
             </div>
         </div>
+        <button class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase">
+          Claim your badge
+        </button>
       </section>
-      <section id="guest">
+      <section id="guest" class="d-flex flex-column align-items-center pb-3">
         <h2 class="text-center fw-bolder pt-5 mb-3">Our virtual Guests</h2>
+        <span class="line-primary"></span>
+        <ul class="row mt-5 list-unstyled p-3 justify-content-md-between">
+          <li class="guest d-flex col-md-5">
+            <div class="headshot"><img src="img/Makima_headshot.jpg" alt="random headshot"/></div>
+            <div class="resume ms-3">
+              <div class="name">Random name</div>
+              <div class="title fst-italic">Random title</div>
+              <div class="experience">Random things done by this person</div>
+            </div>
+          </li>
+          <li class="guest d-flex col-md-5 mt-3">
+            <div class="headshot"><img src="img/levi-ackerman-levis_headshot.jpg" alt="random headshot"/></div>
+            <div class="resume ms-3 d-flex flex-column">
+              <div class="name fw-bold">Random name</div>
+              <div class="title fst-italic">Random title</div>
+              <span class="line-secondary"></span>
+              <div class="experience">Random things done by this person</div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase d-md-none">
+          Load more
+        </button>
       </section>
     </main>
     <script src="js/script.js"></script>

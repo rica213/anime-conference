@@ -12,8 +12,12 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 html {
@@ -29,6 +33,26 @@ body {
   width: 150px;
   height: 50px;
   margin-top: 10px;
+}
+
+.line-primary {
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 100px;
+  display: inline-block;
+}
+
+.btn-danger {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  filter: contrast(200%);
 }
 
 header {
@@ -119,20 +143,44 @@ header {
 
 .program-title {
   color: var(--primary-color);
-  filter: contrast(1000%);
 }
 
-#program .col-sm-5 {
+.program-item {
   transition: filter 0.5s;
-  border-radius: 10px;
 }
 
-#program .col-sm-5:hover {
-  filter: drop-shadow(16px 16px 10px black);
+.program-item:hover {
+  filter: drop-shadow(5px 5px 10px var(--secondary-color)) contrast(200%);
 }
 
 /* guests section */
 #guest {
   background-color: var(--tertiary-color);
 
+}
+
+.headshot {
+  background-image: url(../img/chessboard-pattern.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 80px 80px;
+}
+
+.headshot img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.line-secondary {
+  background-color: var(--tertiary-color);
+  height: 3px;
+  width: 50px;
+  display: inline-block;
+  filter: contrast(150%);
 }

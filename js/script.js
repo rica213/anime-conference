@@ -47,11 +47,13 @@ const loadGuests = () => {
   const ul = document.querySelector('#guest ul');
   guests.forEach((guest) => {
     const li = document.createElement('li');
-    li.classList.add('guest', 'col-md-5', 'mt-3','d-none', 'd-md-flex');
+    li.classList.add('guest', 'col-md-5', 'mt-3');
     if(guest.id === '1' || guest.id ==='2'){
       li.classList.add('d-flex');
+      console.log('1 ou 2');
     } else {
       li.classList.add('d-none', 'd-md-flex');
+      console.log('les reste');
     }
     ul.appendChild(li);
     const headshotWrapper = document.createElement('div');

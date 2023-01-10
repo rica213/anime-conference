@@ -12,12 +12,12 @@
 
 * {
   box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 html {
@@ -55,7 +55,7 @@ body {
   filter: contrast(200%);
 }
 
-header {
+.header {
   position: relative;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -102,7 +102,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
   filter: blur(3px);
 }
 
@@ -135,6 +134,15 @@ header {
   font-size: 3rem;
 }
 
+.headline-about-text q,
+.headline-about-text h1 {
+  font-family: "Cocogoose", sans-serif;
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* main program */
 #program {
   background-image: url(../img/tL78cuP-cool-orange-backgrounds.png);
@@ -156,7 +164,6 @@ header {
 /* guests section */
 #guest {
   background-color: var(--tertiary-color);
-
 }
 
 .headshot {
@@ -167,8 +174,8 @@ header {
 }
 
 .headshot img {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -186,7 +193,7 @@ header {
 }
 
 /* partner section */
-#partner {
+#sponsor {
   background-color: var(--secondary-color);
 }
 

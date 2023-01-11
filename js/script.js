@@ -73,7 +73,7 @@ const loadGuests = () => {
     title.innerText = guest.title;
     resume.appendChild(title);
     const lineSecondary = document.createElement('span');
-    lineSecondary.classList.add('line-secondary');
+    lineSecondary.classList.add('line-secondary', 'mt-1', 'mb-2');
     resume.appendChild(lineSecondary);
     const experience = document.createElement('experience');
     experience.classList.add('experience');

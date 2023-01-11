@@ -75,13 +75,21 @@ window.onload = (event) => {
   loadGuests();
 };
 
-const li = document.querySelectorAll('.guest');
-const loadMore = () => {
+/* const loadMore = () => {
   guests.forEach((guest) => {
-    if (guest.id !== '1' || guest.id !== '2') {
-      li[guest.id - 1].classList.remove('d-none');
-    }
+    li.className = 'guest col-md-5 mt-3 d-none';
+    console.log(li);
   });
 }
 
-moreOrLess.addEventListener('click', loadMore);
+
+
+ */
+moreOrLess.addEventListener('click', () => {
+  const li = document.getElementsByClassName('guest');
+  for (let i = 0; i < li.length; i++) {
+    console.log('his');
+    console.log(li.className[i].value);
+    /* li.className = 'guest col-md-5 mt-3 d-flex'; */
+  }
+});

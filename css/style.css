@@ -213,3 +213,31 @@ body {
 small {
   font-size: 0.65rem;
 }
+
+
+/* archive */
+
+ .archive-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  background-blend-mode: multiply;
+ }
+
+ .archive-one {
+  background-image: linear-gradient(to right, #ef4578 0%, var(--primary-color) 100%), url(../img/geek-ge61361b91_1920.jpg);
+  
+}
+
+ .archive-two {
+  background-image: linear-gradient(to right, #ef4578 0%, var(--primary-color) 100%), url(../img/order-to-turn-its.jpg);
+ }
+
+ .archive-one:hover {
+  background-image: url(../img/geek-ge61361b91_1920.jpg);
+ }
+
+ .archive-two:hover {
+  background-image: url(../img/order-to-turn-its.jpg);
+ }

@@ -70,6 +70,10 @@ body {
   color: var(--secondary-color);
 }
 
+.nav-top .nav-item:hover .nav-link {
+  color: var(--primary-color);
+}
+
 .navbar-toggler-icon {
   background-image: none;
 }

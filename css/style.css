@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Cocogoose";
-  src: local("Cocogoose"),
+  src:
+    local("Cocogoose"),
     url("../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
@@ -15,8 +16,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -58,11 +57,12 @@ body {
 .header {
   position: relative;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 63%,
-    rgba(39, 42, 49, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 63%,
+      rgba(39, 42, 49, 1) 100%
+    );
 }
 
 /* navbar */
@@ -70,16 +70,12 @@ body {
   color: var(--secondary-color);
 }
 
-.nav-top .nav-item:hover .nav-link {
-  color: var(--primary-color);
-}
-
 .navbar-toggler-icon {
   background-image: none;
 }
 
 .navbar-toggler-icon::before {
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   content: "\f0c9";
   color: var(--tertiary-color);
   font-size: 30px;
@@ -91,10 +87,15 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: #ffffff;
+  color: #fff;
+}
+
+.nav-top .nav-item:hover .nav-link {
+  color: var(--primary-color);
 }
 
 /* headline */
@@ -123,11 +124,12 @@ body {
 .headline-text h1 {
   font-family: "Cocogoose", sans-serif;
   background: rgb(236, 82, 66);
-  background: linear-gradient(
-    67deg,
-    rgba(236, 82, 66, 1) 0%,
-    rgba(255, 255, 255, 0.35057773109243695) 100%
-  );
+  background:
+    linear-gradient(
+      67deg,
+      rgba(236, 82, 66, 1) 0%,
+      rgba(255, 255, 255, 0.35057773109243695) 100%
+    );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -225,7 +227,8 @@ small {
 }
 
 .archive-one {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%
@@ -234,7 +237,8 @@ small {
 }
 
 .archive-two {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%

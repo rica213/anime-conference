@@ -5,42 +5,42 @@ const guests = [
     speakerName: 'Makima',
     title: 'Demon Hunters',
     experience: 'She is a ruthless and manipulative character. And we love her for that, I mean who does not love a cat?',
-    headshot: 'img/Makima_headshot.jpg'
+    headshot: 'img/Makima_headshot.jpg',
   },
   {
     id: '2',
     speakerName: 'Daiki Aomine',
     title: 'Basketball player',
     experience: 'Aomine is a character from KNB. He is part of the Generation of Miracles and has one of the biggest ego.',
-    headshot: 'img/aomine-daiki-blue.png'
+    headshot: 'img/aomine-daiki-blue.png',
   },
   {
     id: '3',
     speakerName: 'Usopp',
     title: 'Sailor',
     experience: 'He is a member of the strawhat crew. He is incredibly inventive. He is well known by his big nose and his lies.',
-    headshot: 'img/usopp.png'
+    headshot: 'img/usopp.png',
   },
   {
     id: '4',
     speakerName: 'Asta',
     title: 'Sword fighter',
     experience: 'He is the main character in the Black Cover alongside Yuno. He is known by his strong will to never give up',
-    headshot: 'img/asta.jpg'
+    headshot: 'img/asta.jpg',
   },
   {
     id: '5',
     speakerName: 'Ymir',
     title: 'Sword fighter',
     experience: 'She is a badass!',
-    headshot: 'img/ymir.jpg'
+    headshot: 'img/ymir.jpg',
   },
   {
     id: '6',
     speakerName: 'Kagura',
     title: 'Magic user',
     experience: 'I mean, why not add more badass girl in the stack!',
-    headshot: 'img/Kagura-3-kagura-mikazuchi-fairy-tail.jpg'
+    headshot: 'img/Kagura-3-kagura-mikazuchi-fairy-tail.jpg',
   },
 ];
 
@@ -66,19 +66,19 @@ const loadGuests = () => {
       <p class="experience">${guest.experience}</p>
     </div>
     `;
-  
+
     ul.appendChild(li);
   });
 };
 
-window.onload = (event) => {
+window.onload = () => {
   loadGuests();
 };
- 
+
 moreOrLess.addEventListener('click', () => {
   const li = document.getElementsByClassName('guest');
-  for (let i = 0; i < li.length; i++) {
-    li[i].setAttribute('class','guest col-md-5 mt-3 d-flex');
+  for (let i = 0; i < li.length; i += 1) {
+    li[i].setAttribute('class', 'guest col-md-5 mt-3 d-flex');
   }
   moreOrLess.className = 'd-none';
 });

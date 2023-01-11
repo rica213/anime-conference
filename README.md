@@ -56,7 +56,7 @@ You can check all the necessary information about **"unicorn con 2023"** in this
 ### Key Features <a name="key-features"></a>
 
 - **[responsive]**
-- **[autohide menu]**
+- **[Add dynamically guests]**
 - **[Badge]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,7 +81,7 @@ In order to run this project you need:
 
 > A **browser**
 **_OR_**
-> An **editor of code**
+> an **editor of code**
 
 Download the project and extract in any folder of your choice.
 
@@ -134,9 +134,9 @@ You can edit the project inside your editor.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+-  **[Add less guests]**
+-  **[Autohide menu]**
+-  **[Add link to socials]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,6 +164,7 @@ If you like this project please give it a **star** ⭐️
 
 I would like to thank:
   > Microverse
+  > [Cindy Shin in Behance](https://www.behance.net/adagio07) for the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

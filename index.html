@@ -26,15 +26,21 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav justify-content-end nav-top bg-light d-none d-md-flex">
-        <a class="nav-link" aria-current="page" href="#"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a class="nav-link" href="#"><i class="fa-brands fa-mastodon"></i></a>
-        <a class="nav-link" href="#">Logout</a>
-        <a class="nav-link" href="#">English</a>
-        <a class="nav-link" href="#">My Page</a>
-      </nav>
+      <ul class="nav justify-content-end nav-top bg-light d-none d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-brands fa-mastodon"></i
+            ></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">English</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My Page</a></li>
+      </ul>
       <nav class="navbar navbar-expand-lg bg-dark navbar-custom">
         <div class="container-fluid">
           <button
@@ -78,7 +84,9 @@
           >Hi noobs! You don't want to miss this one!</q
         >
         <h1 class="fw-bold text-uppercase">🦄Unicorn Con 2023🧚</h1>
-        <p class="p-3 bg-dark fw-bolder opacity-75 text-light border border-white border-opacity-10">
+        <p
+          class="p-3 bg-dark fw-bolder opacity-75 text-light border border-white border-opacity-10"
+        >
           <span class="fw-bold fs-5">Kohai</span> inc. just surpassed itself
           this time. An event without precedence will take place this year in
           West Blue, Ohara of all places. Put on your favorite cosplay costume,
@@ -92,50 +100,63 @@
       <section id="program" class="d-flex flex-column align-items-center pb-3">
         <h2 class="text-center fw-bolder pt-5 text-light">Main Program</h2>
         <span class="line-primary"></span>
-        <div class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center m-3">
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
-              <i class="fa-solid fa-masks-theater fs-1 p-1"></i>
-              <h3 class="fw-semibold m-2 program-title fs-6">Perfomances</h3>
-              <p class="p-1">
-                A lot of performers will join us at that time to blow our mind.
-              </p>
-            </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
-              <i class="fa-solid fa-pen-to-square fs-1"></i>
-              <h3 class="fw-semibold m-2 program-title fs-6">Autographs</h3>
-              <p class="p-1">
-                All your favorite authors will gather to make
-                your dream a reality.
-              </p>
-            </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
-              <i class="fa-solid fa-handshake fs-1"></i>
-              <h3 class="fw-semibold m-2 program-title fs-6">
-                Cosplayer meet&greet
-              </h3>
-              <p class="p-1">
-                Every big cosplayers from all over
-                the world will be there.
-              </p>
-            </div>
-            <div class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item">
-              <i class="fa-sharp fa-solid fa-star fs-1"></i>
-              <h3 class="fw-semibold m-2 program-title fs-6">Special events</h3>
-              <p class="p-1">
-                The "gear fourth" show will be the wild card but more special events will also take place.
-             </p>
-            </div>
+        <div
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center m-3"
+        >
+          <div
+            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+          >
+            <i class="fa-solid fa-masks-theater fs-1 p-1"></i>
+            <h3 class="fw-semibold m-2 program-title fs-6">Perfomances</h3>
+            <p class="p-1">
+              A lot of performers will join us at that time to blow our mind.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+          >
+            <i class="fa-solid fa-pen-to-square fs-1"></i>
+            <h3 class="fw-semibold m-2 program-title fs-6">Autographs</h3>
+            <p class="p-1">
+              All your favorite authors will gather to make your dream a
+              reality.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+          >
+            <i class="fa-solid fa-handshake fs-1"></i>
+            <h3 class="fw-semibold m-2 program-title fs-6">
+              Cosplayer meet&greet
+            </h3>
+            <p class="p-1">
+              Every big cosplayers from all over the world will be there.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+          >
+            <i class="fa-sharp fa-solid fa-star fs-1"></i>
+            <h3 class="fw-semibold m-2 program-title fs-6">Special events</h3>
+            <p class="p-1">
+              The "gear fourth" show will be the wild card but more special
+              events will also take place.
+            </p>
+          </div>
         </div>
-        <button class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase">
+        <button
+          class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase"
+        >
           Claim your badge
         </button>
       </section>
       <section id="guest" class="d-flex flex-column align-items-center pb-3">
-        <h2 class="text-center fw-bolder pt-5 mb-3">Our virtual Guests</h2>
+        <h2 class="text-center fw-bolder pt-5 mb-3">Our virtual guests</h2>
         <span class="line-primary"></span>
-        <ul class="row mt-5 list-unstyled p-3 justify-content-md-between">
-        </ul>
-        <button class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase d-md-none more-or-less">
+        <ul class="row mt-5 list-unstyled p-3 justify-content-md-between"></ul>
+        <button
+          class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase d-md-none more-or-less"
+        >
           Load more
         </button>
       </section>
@@ -143,18 +164,27 @@
         <h2 class="text-center fw-bolder pt-5 mb-3 text-light">Sponsors</h2>
         <span class="line-primary"></span>
         <div class="brand w-75 d-flex justify-content-between my-5">
-          <i class='fab fa-xbox fs-1'></i>
-          <i class='fab fa-steam fs-1'></i>
-          <i class='fab fa-playstation fs-1'></i>
-          <i class='fab fa-imdb fs-1'></i>
-          <i class='fab fa-vimeo-v fs-1'></i>
-          <i class='fab fa-weibo fs-1'></i>
+          <i class="fab fa-xbox fs-1"></i>
+          <i class="fab fa-steam fs-1"></i>
+          <i class="fab fa-playstation fs-1"></i>
+          <i class="fab fa-imdb fs-1"></i>
+          <i class="fab fa-vimeo-v fs-1"></i>
+          <i class="fab fa-weibo fs-1"></i>
         </div>
       </section>
     </main>
-    <footer class="d-flex justify-content-around align-items-center my-4 w-50 mx-auto">
-      <img src="img/logo/kohai-logo-transparent-bg.png" alt="kohai logo" class="logo">
-      <small class="fw-semibold"> 2023 Unicorn Con <br> Some rights Reserved</small>
+    <footer
+      class="d-flex justify-content-around align-items-center my-4 w-50 mx-auto"
+    >
+      <img
+        src="img/logo/kohai-logo-transparent-bg.png"
+        alt="kohai logo"
+        class="logo"
+      />
+      <small class="fw-semibold">
+        2023 Unicorn Con <br />
+        Some rights Reserved</small
+      >
     </footer>
     <script src="js/script.js"></script>
     <script

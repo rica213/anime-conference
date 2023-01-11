@@ -2,45 +2,45 @@ const moreOrLess = document.querySelector('.more-or-less');
 const guests = [
   {
     id: '1',
-    speakerName: 'Random name one',
-    title: 'Random title',
-    experience: 'Random things done by this person one',
+    speakerName: 'Makima',
+    title: 'Demon Hunters',
+    experience: 'She is a ruthless and manipulative character. And we love her for that, I mean who does not love a cat?',
     headshot: 'img/Makima_headshot.jpg'
   },
   {
     id: '2',
-    speakerName: 'Random name two',
-    title: 'Random title',
-    experience: 'Random things done by this person two',
-    headshot: 'img/Makima_headshot.jpg'
+    speakerName: 'Daiki Aomine',
+    title: 'Basketball player',
+    experience: 'Aomine is a character from KNB. He is part of the Generation of Miracles and has one of the biggest ego.',
+    headshot: 'img/aomine-daiki-blue.png'
   },
   {
     id: '3',
-    speakerName: 'Random name three',
-    title: 'Random title',
-    experience: 'Random things done by this person three',
-    headshot: 'img/Makima_headshot.jpg'
+    speakerName: 'Usopp',
+    title: 'Sailor',
+    experience: 'He is a member of the strawhat crew. He is incredibly inventive. He is well known by his big nose and his lies.',
+    headshot: 'img/usopp.png'
   },
   {
     id: '4',
-    speakerName: 'Random name four',
-    title: 'Random title',
-    experience: 'Random things done by this person four',
-    headshot: 'img/Makima_headshot.jpg'
+    speakerName: 'Asta',
+    title: 'Sword fighter',
+    experience: 'He is the main character in the Black Cover alongside Yuno. He is known by his strong will to never give up',
+    headshot: 'img/asta.jpg'
   },
   {
     id: '5',
-    speakerName: 'Random name five',
-    title: 'Random title',
-    experience: 'Random things done by this person five',
-    headshot: 'img/Makima_headshot.jpg'
+    speakerName: 'Ymir',
+    title: 'Sword fighter',
+    experience: 'She is a badass!',
+    headshot: 'img/ymir.jpg'
   },
   {
     id: '6',
-    speakerName: 'Random name six',
-    title: 'Random title',
-    experience: 'Random things done by this person six',
-    headshot: 'img/Makima_headshot.jpg'
+    speakerName: 'Kagura',
+    title: 'Magic user',
+    experience: 'I mean, why not add more badass girl in the stack!',
+    headshot: 'img/Kagura-3-kagura-mikazuchi-fairy-tail.jpg'
   },
 ];
 
@@ -86,12 +86,11 @@ window.onload = (event) => {
   loadGuests();
 };
 
-
+const li = document.querySelectorAll('.guest');
 const loadMore = () => {
-  const li = document.querySelectorAll('.guest');
   guests.forEach((guest) => {
-    if(guest.id ==! '1' || guest.id ==!'2'){
-      li.classList.remove('d-none');
+    if(guest.id !== '1' || guest.id !=='2'){
+      li[guest.id - 1].classList.remove('d-none');
     }
   });
 }

@@ -74,22 +74,11 @@ const loadGuests = () => {
 window.onload = (event) => {
   loadGuests();
 };
-
-/* const loadMore = () => {
-  guests.forEach((guest) => {
-    li.className = 'guest col-md-5 mt-3 d-none';
-    console.log(li);
-  });
-}
-
-
-
- */
+ 
 moreOrLess.addEventListener('click', () => {
   const li = document.getElementsByClassName('guest');
   for (let i = 0; i < li.length; i++) {
-    console.log('his');
-    console.log(li.className[i].value);
-    /* li.className = 'guest col-md-5 mt-3 d-flex'; */
+    li[i].setAttribute('class','guest col-md-5 mt-3 d-flex');
   }
+  moreOrLess.className = 'd-none';
 });

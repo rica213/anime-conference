@@ -65,7 +65,7 @@ You can check all the necessary information about **"unicorn con 2023"** in this
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [This link is yet to come](https://yourdeployedapplicationlink.com)
+- [Here is the live demo](https://rica213.github.io/anime-conference/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

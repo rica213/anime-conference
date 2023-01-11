@@ -46,39 +46,28 @@ const guests = [
 
 const loadGuests = () => {
   const ul = document.querySelector('#guest ul');
+  ul.innerHTML = '';
   guests.forEach((guest) => {
     const li = document.createElement('li');
-    li.classList.add('guest', 'col-md-5', 'mt-3');
-    if(guest.id === '1' || guest.id ==='2'){
-      li.classList.add('d-flex');
+    if (guest.id === '1' || guest.id === '2') {
+      li.className = 'guest col-md-5 mt-3 d-flex';
     } else {
-      li.classList.add('d-none', 'd-md-flex');
+      li.className = 'guest col-md-5 mt-3 d-none d-md-flex';
     }
+
+    li.innerHTML = `
+    <div class="headshot">
+      <img src="${guest.headshot}" alt="headshot of ${guest.speakerName}">
+    </div>
+    <div class="resume ms-3 d-flex flex-column">
+      <h3 class="name fw-bold">${guest.speakerName}</h3>
+      <h4 class="title fst-italic">${guest.title}</h4>
+      <span class="line-secondary mt-1 mb-2"></span>
+      <p class="experience">${guest.experience}</p>
+    </div>
+    `;
+  
     ul.appendChild(li);
-    const headshotWrapper = document.createElement('div');
-    headshotWrapper.classList.add('headshot');
-    li.appendChild(headshotWrapper);
-    const headshotContent = document.createElement('img');
-    headshotContent.src = guest.headshot;
-    headshotWrapper.appendChild(headshotContent);
-    const resume = document.createElement('div');
-    resume.classList.add('resume', 'ms-3', 'd-flex', 'flex-column');
-    li.appendChild(resume);
-    const speakerName = document.createElement('div');
-    speakerName.classList.add('name', 'fw-bold');
-    speakerName.innerText = guest.speakerName;
-    resume.appendChild(speakerName);
-    const title = document.createElement('div');
-    title.classList.add('title', 'fst-italic');
-    title.innerText = guest.title;
-    resume.appendChild(title);
-    const lineSecondary = document.createElement('span');
-    lineSecondary.classList.add('line-secondary', 'mt-1', 'mb-2');
-    resume.appendChild(lineSecondary);
-    const experience = document.createElement('experience');
-    experience.classList.add('experience');
-    experience.innerText = guest.experience;
-    resume.appendChild(experience);
   });
 };
 
@@ -89,7 +78,7 @@ window.onload = (event) => {
 const li = document.querySelectorAll('.guest');
 const loadMore = () => {
   guests.forEach((guest) => {
-    if(guest.id !== '1' || guest.id !=='2'){
+    if (guest.id !== '1' || guest.id !== '2') {
       li[guest.id - 1].classList.remove('d-none');
     }
   });

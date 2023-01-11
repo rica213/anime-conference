@@ -60,8 +60,8 @@ const loadGuests = () => {
       <img src="${guest.headshot}" alt="headshot of ${guest.speakerName}">
     </div>
     <div class="resume ms-3 d-flex flex-column">
-      <h3 class="name fw-bold">${guest.speakerName}</h3>
-      <h4 class="title fst-italic">${guest.title}</h4>
+      <h4 class="name fw-bold mb-0">${guest.speakerName}</h4>
+      <small class="title fst-italic">${guest.title}</small>
       <span class="line-secondary mt-1 mb-2"></span>
       <p class="experience">${guest.experience}</p>
     </div>

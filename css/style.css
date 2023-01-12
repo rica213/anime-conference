@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Cocogoose";
-  src: local("Cocogoose"),
+  src:
+    local("Cocogoose"),
     url("../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
@@ -135,11 +136,12 @@ body {
 .headline-text h1 {
   font-family: "Cocogoose", sans-serif;
   background: rgb(236, 82, 66);
-  background: linear-gradient(
-    67deg,
-    rgba(236, 82, 66, 1) 0%,
-    rgba(255, 255, 255, 0.35057773109243695) 100%
-  );
+  background:
+    linear-gradient(
+      67deg,
+      rgba(236, 82, 66, 1) 0%,
+      rgba(255, 255, 255, 0.35057773109243695) 100%
+    );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -237,7 +239,8 @@ small {
 }
 
 .archive-one {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%
@@ -246,7 +249,8 @@ small {
 }
 
 .archive-two {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%

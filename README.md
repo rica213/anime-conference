@@ -67,6 +67,8 @@ You can check all the necessary information about **"unicorn con 2023"** in this
 
 - [Here is the live demo](https://rica213.github.io/anime-conference/)
 
+- [here is the video walkthrough](https://www.loom.com/share/4290863a62de4534913c2e5130b341cc)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->

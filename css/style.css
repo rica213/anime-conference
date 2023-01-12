@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Cocogoose";
-  src:
-    local("Cocogoose"),
+  src: local("Cocogoose"),
     url("../fonts/Cocogoose_trial.otf") format("opentype");
 }
 
@@ -26,6 +25,26 @@ html {
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-light {
+  color: var(--tertiary-color);
+}
+
+.text-dark {
+  color: var(--secondary-color);
+}
+
+.bg-light {
+  background-color: var(--tertiary-color);
+}
+
+.bg-dark {
+  background-color: var(--secondary-color);
 }
 
 .logo {
@@ -56,18 +75,11 @@ body {
 
 .header {
   position: relative;
-  background: rgb(255, 255, 255);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 63%,
-      rgba(39, 42, 49, 1) 100%
-    );
 }
 
 /* navbar */
 .nav-top .nav-link {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .navbar-toggler-icon {
@@ -83,15 +95,14 @@ body {
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: var(--tertiary-color);
-  text-transform: uppercase;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .nav-top .nav-item:hover .nav-link {
@@ -100,7 +111,7 @@ body {
 
 /* headline */
 .headline {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   background-image: url(../img/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -124,12 +135,11 @@ body {
 .headline-text h1 {
   font-family: "Cocogoose", sans-serif;
   background: rgb(236, 82, 66);
-  background:
-    linear-gradient(
-      67deg,
-      rgba(236, 82, 66, 1) 0%,
-      rgba(255, 255, 255, 0.35057773109243695) 100%
-    );
+  background: linear-gradient(
+    67deg,
+    rgba(236, 82, 66, 1) 0%,
+    rgba(255, 255, 255, 0.35057773109243695) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -151,20 +161,20 @@ body {
 
 /* main program */
 #program {
-  background-image: url(../img/tL78cuP-cool-orange-backgrounds.png);
+  background-image: url(../img/pattern-black-wallpapers.jpg);
   background-size: cover;
-}
-
-.program-title {
-  color: var(--primary-color);
 }
 
 .program-item {
   transition: filter 0.5s;
 }
 
+.program-item p {
+  font-size: 0.65rem;
+}
+
 .program-item:hover {
-  filter: drop-shadow(5px 5px 10px var(--secondary-color)) contrast(200%);
+  filter: drop-shadow(2px 2px 2px var(--tertiary-color)) contrast(200%);
 }
 
 /* guests section */
@@ -227,8 +237,7 @@ small {
 }
 
 .archive-one {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%
@@ -237,13 +246,16 @@ small {
 }
 
 .archive-two {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right,
       #ef4578 0%,
       var(--primary-color) 100%
     ),
     url(../img/order-to-turn-its.jpg);
+}
+
+#archive li {
+  padding-top: 100px;
 }
 
 .archive-one:hover {
@@ -252,4 +264,14 @@ small {
 
 .archive-two:hover {
   background-image: url(../img/order-to-turn-its.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .about-footer {
+    background-color: var(--secondary-color);
+  }
+
+  .about-footer small {
+    color: var(--tertiary-color);
+  }
 }

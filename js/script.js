@@ -63,7 +63,7 @@ const loadGuests = () => {
       <h4 class="name fw-bold mb-0">${guest.speakerName}</h4>
       <small class="title fst-italic">${guest.title}</small>
       <span class="line-secondary mt-1 mb-2"></span>
-      <p class="experience">${guest.experience}</p>
+      <p class="experience pe-5">${guest.experience}</p>
     </div>
     `;
 

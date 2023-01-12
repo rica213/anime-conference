@@ -26,18 +26,22 @@
   </head>
   <body>
     <header class="bg-light-subtle">
-      <nav class="nav justify-content-end nav-top bg-dark d-none d-md-flex">
-        <a class="nav-link text-light" aria-current="page" href="#"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a class="nav-link text-light" href="#"
-          ><i class="fa-brands fa-mastodon"></i
-        ></a>
-        <a class="nav-link text-light" href="#">Logout</a>
-        <a class="nav-link text-light" href="#">English</a>
-        <a class="nav-link text-light" href="#">My Page</a>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-custom sticky-top">
+      <ul class="nav justify-content-end nav-top bg-dark d-none d-md-flex px-5">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-brands fa-mastodon"></i></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">English</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">My Page</a></li>
+      </ul>
+      <nav
+        class="navbar navbar-expand-md bg-light navbar-custom sticky-top px-5"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -50,31 +54,32 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarToggler"
+          >
             <a class="navbar-brand" href="../index.html"
               ><img
                 src="../img/logo/kohai-high-resolution-logo-black-on-transparent-background.png"
                 alt="logo"
                 class="logo"
             /></a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-0 mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link fw-semibold text-dark" href="#location"
-                  >Location</a
-                >
+                <a class="nav-link" href="#location">Location</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold text-dark" href="#archive"
-                  >Archive</a
-                >
+                <a class="nav-link" href="#archive">Archives</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold text-dark" href="#sponsor"
-                  >Sponsors</a
-                >
+                <a class="nav-link" href="#sponsor">Sponsors</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-outline-danger">
+                  Claim your badge
+                </button>
               </li>
             </ul>
-            <button type="button" class="btn btn-outline-dark">Claim your badge</button>
           </div>
         </div>
       </nav>
@@ -108,7 +113,8 @@
           <span class="fw-bold fs-5">Unicorn Con 2023</span> will be held at
           <br /><span class="fs-1">Colisseum Ohara, West Blue</span>
         </p>
-        <button type="button"
+        <button
+          type="button"
           class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase"
         >
           Book your room
@@ -117,12 +123,23 @@
       <section id="archive" class="d-flex flex-column align-items-center pb-3">
         <h2 class="text-center fw-bolder pt-5 mb-3">Archives</h2>
         <span class="line-primary"></span>
-        <ul class="mt-5 list-unstyled p-3 row text-light fw-bolder fs-1 ">
-            <li class="archive-item archive-one  mx-auto my-1 text-center col-11 col-md-5 pt-5">Fairies Con 2018</li>
-            <li class="archive-item archive-two mx-auto my-1 text-center col-11 col-md-5 pt-5">Centaurs Con 2020</li>
+        <ul class="mt-5 list-unstyled p-3 row text-light fw-bolder fs-1">
+          <li
+            class="archive-item archive-one mx-auto my-1 text-center col-11 col-md-5"
+          >
+            Fairies Con 2018
+          </li>
+          <li
+            class="archive-item archive-two mx-auto my-1 text-center col-11 col-md-5"
+          >
+            Centaurs Con 2020
+          </li>
         </ul>
       </section>
-      <section id="sponsor" class="d-flex flex-column align-items-center pb-3">
+      <section
+        id="sponsor"
+        class="d-flex flex-column d-md-none align-items-center pb-3"
+      >
         <h2 class="text-center fw-bolder pt-5 mb-3 text-light">Sponsors</h2>
         <span class="line-primary"></span>
         <div class="brand w-75 d-flex justify-content-between my-5">
@@ -135,18 +152,20 @@
         </div>
       </section>
     </main>
-    <footer
-      class="d-flex justify-content-around align-items-center my-4 w-50 mx-auto"
-    >
-      <img
-        src="../img/logo/kohai-logo-transparent-bg.png"
-        alt="kohai logo"
-        class="logo"
-      />
-      <small class="fw-semibold">
-        2023 Unicorn Con <br />
-        Some rights Reserved</small
+    <footer class="about-footer">
+      <div
+        class="d-flex justify-content-around align-items-center py-4 w-50 mx-auto"
       >
+        <img
+          src="../img/logo/kohai-logo-transparent-bg.png"
+          alt="kohai logo"
+          class="logo"
+        />
+        <small class="fw-semibold">
+          2023 Unicorn Con <br />
+          Some rights Reserved</small
+        >
+      </div>
     </footer>
     <script src="js/script.js"></script>
     <script

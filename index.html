@@ -26,22 +26,22 @@
   </head>
   <body>
     <header class="header">
-      <ul class="nav justify-content-end nav-top bg-light d-none d-md-flex">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fa-brands fa-mastodon"></i
-            ></a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">English</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">My Page</a></li>
+      <ul class="nav justify-content-end nav-top bg-dark d-none d-md-flex px-5">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-brands fa-mastodon"></i></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">English</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">My Page</a></li>
       </ul>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-custom sticky-top">
+      <nav
+        class="navbar navbar-expand-md bg-light navbar-custom sticky-top px-5"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -54,14 +54,17 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarToggler"
+          >
             <a class="navbar-brand" href="index.html"
               ><img
-                src="img/logo/kohai-logo-transparent-bg.png"
+                src="img/logo/kohai-high-resolution-logo-black-on-transparent-background.png"
                 alt="logo"
                 class="logo"
             /></a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-0 mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link" href="pages/about.html">About</a>
               </li>
@@ -74,8 +77,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="#sponsor">Sponsors</a>
               </li>
+              <li>
+                <button type="button" class="btn btn-outline-danger">
+                  Claim your badge
+                </button>
+              </li>
             </ul>
-            <button type="button" class="btn btn-outline-danger">Claim your badge</button>
           </div>
         </div>
       </nav>
@@ -86,67 +93,77 @@
         >
         <h1 class="fw-bold text-uppercase">🦄Unicorn Con 2023🧚</h1>
         <p
-          class="p-3 bg-dark fw-bolder opacity-75 text-light border border-white border-opacity-10"
+          class="p-3 bg-light fw-bolder opacity-75 text-dark order border-white border-opacity-10"
         >
           <span class="fw-bold fs-5">Kohai</span> inc. just surpassed itself
           this time. An event without precedence will take place this year in
           West Blue, Ohara of all places. Put on your favorite cosplay costume,
           because we will bazinga like it is our last day.
         </p>
-        <p class="fs-1 fw-bold text-light">Mon 29 - Wen 31 May</p>
-        <p class="text-light fw-semibold">@Colosseum Ohara West Blue</p>
+        <p class="fs-1 fw-bold text-dark">Mon 29 - Wen 31 May</p>
+        <p class="text-dark fw-semibold">@Colosseum Ohara West Blue</p>
       </div>
     </header>
     <main>
       <section id="program" class="d-flex flex-column align-items-center pb-3">
         <h2 class="text-center fw-bolder pt-5 text-light">Main Program</h2>
-        <span class="line-primary"></span>
+        <span class="line-primary mb-4"></span>
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center m-3"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-md-center"
         >
           <div
-            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+            class="d-flex flex-md-column justify-content-start justify-content-md-center align-items-center bg-dark opacity-75 rounded-1 ms-1 my-1 col-md-2 program-item p-1"
           >
-            <i class="fa-solid fa-masks-theater fs-1 p-1"></i>
-            <h3 class="fw-semibold m-2 program-title fs-6">Perfomances</h3>
-            <p class="p-1">
+            <i class="fa-solid fa-masks-theater fs-1 text-primary"></i>
+            <h3 class="fw-semibold m-2 text-primary fs-6">Perfomances</h3>
+            <p class="p-1 text-light">
               A lot of performers will join us at that time to blow our mind.
             </p>
           </div>
           <div
-            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+            class="d-flex flex-md-column justify-content-start justify-content-md-center align-items-center bg-dark opacity-75 rounded-1 ms-1 my-1 col-md-2 program-item p-1"
           >
-            <i class="fa-solid fa-pen-to-square fs-1"></i>
-            <h3 class="fw-semibold m-2 program-title fs-6">Autographs</h3>
-            <p class="p-1">
+            <i class="fa-solid fa-pen-to-square fs-1 text-primary"></i>
+            <h3 class="fw-semibold m-2 text-primary fs-6">Autographs</h3>
+            <p class="p-1 text-light">
               All your favorite authors will gather to make your dream a
               reality.
             </p>
           </div>
           <div
-            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+            class="d-flex flex-md-column justify-content-start justify-content-md-center align-items-center bg-dark opacity-75 rounded-1 ms-1 my-1 col-md-2 program-item p-1"
           >
-            <i class="fa-solid fa-handshake fs-1"></i>
-            <h3 class="fw-semibold m-2 program-title fs-6">
+            <i class="fa-solid fa-handshake fs-1 text-primary"></i>
+            <h3 class="fw-semibold m-2 text-primary fs-6">
               Cosplayer meet&greet
             </h3>
-            <p class="p-1">
+            <p class="p-1 text-light">
               Every big cosplayers from all over the world will be there.
             </p>
           </div>
           <div
-            class="d-flex flex-md-column align-items-center bg-light opacity-75 rounded-1 m-3 p-3 col-md-2 program-item"
+            class="d-flex flex-md-column justify-content-start justify-content-md-center align-items-center bg-dark opacity-75 rounded-1 ms-1 my-1 col-md-2 program-item p-1"
           >
-            <i class="fa-sharp fa-solid fa-star fs-1"></i>
-            <h3 class="fw-semibold m-2 program-title fs-6">Special events</h3>
-            <p class="p-1">
+            <i class="fa-sharp fa-solid fa-microphone fs-1 text-primary"></i>
+            <h3 class="fw-semibold m-2 text-primary fs-6">Voice acting</h3>
+            <p class="p-1 text-light">
+              There will be a live voice acting in the main hall.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-md-column justify-content-start justify-content-md-center align-items-center bg-dark opacity-75 rounded-1 ms-1 my-1 col-md-2 program-item p-1"
+          >
+            <i class="fa-sharp fa-solid fa-star fs-1 text-primary"></i>
+            <h3 class="fw-semibold m-2 text-primary fs-6">Special events</h3>
+            <p class="p-1 text-light">
               The "gear fourth" show will be the wild card but more special
               events will also take place.
             </p>
           </div>
         </div>
-        <button type="button"
-          class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase"
+        <button
+          type="button"
+          class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase mt-5"
         >
           Claim your badge
         </button>
@@ -154,14 +171,18 @@
       <section id="guest" class="d-flex flex-column align-items-center pb-3">
         <h2 class="text-center fw-bolder pt-5 mb-3">Our virtual guests</h2>
         <span class="line-primary"></span>
-        <ul class="row mt-5 list-unstyled p-3 justify-content-md-between"></ul>
-        <button type="button"
-          class="btn btn-danger p-3 rounded-0 text-white fw-bold mx-auto text-uppercase d-md-none more-or-less"
+        <ul class="row mt-5 list-unstyled p-3 justify-content-center"></ul>
+        <button
+          type="button"
+          class="btn btn-outline-dark p-3 rounded-0 fw-bold mx-auto text-uppercase d-md-none more-or-less w-50"
         >
-          Load more
+          Load more <i class="fas fa-angle-down"></i>
         </button>
       </section>
-      <section id="sponsor" class="d-flex flex-column align-items-center pb-3">
+      <section
+        id="sponsor"
+        class="d-none d-md-flex flex-column align-items-center pb-3"
+      >
         <h2 class="text-center fw-bolder pt-5 mb-3 text-light">Sponsors</h2>
         <span class="line-primary"></span>
         <div class="brand w-75 d-flex justify-content-between my-5">
@@ -175,7 +196,7 @@
       </section>
     </main>
     <footer
-      class="d-flex justify-content-around align-items-center my-4 w-50 mx-auto"
+      class="d-none d-md-flex justify-content-around align-items-center my-4 w-50 mx-auto"
     >
       <img
         src="img/logo/kohai-logo-transparent-bg.png"

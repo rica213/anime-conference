@@ -1,4 +1,5 @@
-const moreOrLess = document.querySelector('.more-or-less');
+const more = document.querySelector('.more');
+const less = document.querySelector('.less');
 const guests = [
   {
     id: '1',
@@ -75,10 +76,21 @@ window.onload = () => {
   loadGuests();
 };
 
-moreOrLess.addEventListener('click', () => {
+more.addEventListener('click', () => {
   const li = document.getElementsByClassName('guest');
   for (let i = 0; i < li.length; i += 1) {
     li[i].setAttribute('class', 'guest col-md-5 mt-3 d-flex');
   }
-  moreOrLess.className = 'd-none';
+  more.className = 'd-none';
+  less.className = 'btn btn-outline-dark p-3 rounded-0 fw-bold mx-auto text-uppercase d-md-none w-50 less';
+});
+
+less.addEventListener('click', () => {
+  const li = document.getElementsByClassName('guest');
+  for (let i = 2; i < li.length; i += 1) {
+    li[i].setAttribute('class', 'guest d-none');
+  }
+
+  less.className = 'd-none';
+  more.className = 'btn btn-outline-dark p-3 rounded-0 fw-bold mx-auto text-uppercase d-md-none w-50 less';
 });

@@ -101,7 +101,7 @@ body {
 }
 
 /* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item .nav-link.active,
 .navbar-custom .nav-item:hover .nav-link {
   color: var(--primary-color);
 }

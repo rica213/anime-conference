@@ -165,8 +165,8 @@ If you like this project please give it a **star** ⭐️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
-  > Microverse
-  > [Cindy Shin in Behance](https://www.behance.net/adagio07) for the original design
+  - Microverse
+  - [Cindy Shin in Behance](https://www.behance.net/adagio07) for the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

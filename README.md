@@ -4,7 +4,7 @@
   <img src="img/logo/kohai-logo-transparent-bg.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>README</b></h3>
+  <h1><b>🦄 Unicorn con 2023 👼</b></h1>
 
 </div>
 
@@ -13,23 +13,19 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [🛠 Built With](#built-with)
+   - [Tech Stack](#tech-stack)
+- [🗝 Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
+  - [Setup](#setup)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -38,32 +34,27 @@
 
 You can check all the necessary information about **"unicorn con 2023"** in this website.
 
-## 🛠 Built With <a name="built-with"></a>
+# 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="">HTML</a></li>
-    <li><a href="">CSS (Bootstrap)</a></li>
-    <li><a href="">Javascript</a></li>
-  </ul>
-</details>
+- HTML
+- CSS (Bootstrap)
+- Javascript
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+# 🗝 Key Features <a name="key-features"></a>
 
-- **[responsive]**
-- **[Add dynamically guests]**
-- **[Badge]**
+- **Responsive**
+- **Add guests dynamically**
+- **Badge**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+# 🚀 Live Demo <a name="live-demo"></a>
 
 - [Here is the live demo](https://rica213.github.io/anime-conference/)
 
@@ -73,70 +64,55 @@ You can check all the necessary information about **"unicorn con 2023"** in this
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+# 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+## Prerequisites
 
 In order to run this project you need:
 
-> A **browser**
-**_OR_**
-> an **editor of code**
+- A **browser** to run the code
+**OR**
+- An **editor of code** to edit the code
 
-Download the project and extract in any folder of your choice.
+Download the project and extract it in any folder of your choice.
 
-
-### Setup
+## Setup
 
 Clone this repository to your desired folder:
 
 Example commands:
 
-```sh
+```
   cd my-folder
-  git clone git@github.com:rica213/my-project.git
+  git clone git@github.com:rica213/anime-conference.git
 ```
 
+## Usage
 
-### Install
+You can open the project in your project by double-clicking on the **index.html** file.
 
-### Usage
-
-<!-- To run the project, execute the following command: -->
-
-You now can run the **index.html** with your browser.
-
-**_OR_**
+**OR**
 
 You can edit the project inside your editor.
 
-### Run tests
-
-### Deployment
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+# 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-👤 **Larissa (Tao)**
+👤 **Clarielle Larissa**
 
 - GitHub: [@rica213](https://github.com/rica213)
 - Twitter: [@alc3and](https://twitter.com/alc3and)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/larissa-clarielle-andrainasoa-8768a3256)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/larissa-clarielle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+# 🔭 Future Features <a name="future-features"></a>
 
--  **[Add less guests]**
 -  **[Autohide menu]**
 -  **[Add link to socials]**
 
@@ -144,7 +120,7 @@ You can edit the project inside your editor.
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+# 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -154,7 +130,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+# ⭐️ Show your support <a name="support"></a>
 
 If you like this project please give it a **star** ⭐️
 
@@ -162,7 +138,7 @@ If you like this project please give it a **star** ⭐️
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+# 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
   - Microverse
@@ -170,17 +146,9 @@ I would like to thank:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> No FAQ yet!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+# 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
